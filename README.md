@@ -1,7 +1,7 @@
 # Template Quarto-DataReport-Typst
 
-Un formato Quarto + Typst per brevi report eleganti.  
-Il design del template si ispira ai layout tipografici dei classici template LaTeX e a soluzioni moderne per Quarto.
+Un formato Quarto + Typst pensato per brevi report.
+Il design del template si ispira ai layout tipografici dei classici template LaTeX come ClassiThesis o ArsClassica, adattandolo per l'uso con Quarto e documenti brevi con numerosi grafici e tabelle.
 
 Questo template è pensato per creare report o articoli con:
 
