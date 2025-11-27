@@ -28,6 +28,8 @@ Oppure puoi creare un nuovo progetto basato sul template con un file `.qmd`:
 quarto use template andreabz/quarto-datareport-typst
 ```
 
+Per replicare il template è necessario copiare la struttura e il contenuto della cartella `static/fonts` all'interno della cartella principale del progetto.
+
 ## Utilizzo
 
 1. Scrivi il tuo documento `.qmd` specificando il formato nell'intestazione `yaml`:
