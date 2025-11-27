@@ -21,7 +21,7 @@ library(gt)
 
 # Introduzione
 
-Questo è un documento di esempio creato per mostrare l'utilizzo del tuo **template Typst per Quarto**. Il file contiene:
+Questo è un documento di esempio creato per mostrare l'utilizzo del **template Typst per Quarto**. Il file contiene:
 
 - testo formattato
 - un grafico generato con `ggplot2`
