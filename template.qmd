@@ -59,6 +59,7 @@ Altro lorem ipsum {{< lipsum 2 >}}.
 ```{r}
 #| label: fig-prova
 #| fig-cap: Una figura di prova
+#| echo: true
 
 library(ggplot2)
 
