@@ -10,6 +10,7 @@ execute:
   message: false
 format: 
   datareport-typst:
+    css-property-processing: none
     font-paths: static/fonts/
 ---
 
@@ -45,12 +46,15 @@ In questa sezione lavoriamo con il dataset `mtcars`, fornito di default in R.
 ```{r}
 #| label: tbl-prova
 #| tbl-cap: Una tabella di prova.
-mtcars |>
+#| 
+car <- rownames(mtcars)
+data <- cbind(car, mtcars)
+data[, 1:10] |>
 head(10) |>
 gt()
 ```
 
-Altro lorem ipsum {{< lipsum 5 >}}.
+Altro lorem ipsum {{< lipsum 2 >}}.
 
 ```{r}
 #| label: fig-prova
@@ -69,7 +73,7 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
     theme_minimal()
 ```
 
-Ancora lorem ipsum {{< lipsum 8 >}}.
+Ancora lorem ipsum {{< lipsum 2 >}}.
 
 C'è anche un'equazione:
 

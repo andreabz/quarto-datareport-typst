@@ -1,49 +1,41 @@
 # Template Quarto-DataReport-Typst
 
-Un formato Quarto + Typst pensato per brevi report.
-Il design del template si ispira ai layout tipografici dei classici template LaTeX come ClassiThesis o ArsClassica, adattandolo per l'uso con Quarto e documenti brevi con numerosi grafici e tabelle.
+Un template Quarto + Typst pensato per la produzione di report brevi, articoli tecnici e documenti con numerosi grafici e tabelle.
+Il design riprende lo stile tipografico di classici layout LaTeX come ClassicThesis e ArsClassica, adattandolo all’ecosistema Quarto e a documenti moderni in PDF.
 
-Questo template è pensato per creare report o articoli con:
+
+## Caratteristiche principali
 
 - Numerazione automatica di capitoli, figure, tabelle ed equazioni
 - Header e footer personalizzati
 - Stile uniforme per testi, figure, tabelle e blocchi di codice
-- Layout tipograficamente equilibrato, con margini ottimizzati e spaziatura tra elementi
+- Margini ottimizzati e spaziatura equilibrata tra gli elementi
+- Layout pensato per documenti tecnici compatti
 
----
-
-## Demo
-
-Apri `template.qmd` per un esempio completo con:
-
-- Testo di esempio (Lorem Ipsum)
-- Grafici generati con `ggplot2`
-- Tabelle create con `gt()`
-- Equazioni con numerazione automatica
-
----
+[![template preview](img/template.png)](https://andreabz.github.io/quarto-datareport-typst/template.pdf)
 
 ## Installazione
 
 Per aggiungere il template a una directory esistente:
 
 ```bash
-quarto install extension andreabz/quarto-report-typst
+quarto install extension andreabz/quarto-datareport-typst
 ```
 
 Oppure puoi creare un nuovo progetto basato sul template con un file `.qmd`:
 
 ```bash
-quarto use template andreabz/quarto-report-typst
+quarto use template andreabz/quarto-datareport-typst
 ```
 
-## Uso
+## Utilizzo
 
 1. Scrivi il tuo documento `.qmd` specificando il formato nell'intestazione `yaml`:
 
 ```yaml
 format: 
   datareport-typst:
+    css-property-processing: none
     font-paths: static/fonts/
 ```
 2. Renderizza il documento:
@@ -52,7 +44,7 @@ format:
 quarto render documento.qmd
 ```
 
-Il PDF generato userà automaticamente il layout, i font e le regole tipografiche del template.
+Il PDF risultante utilizzerà automaticamente layout, font e regole tipografiche del template.
 
 ## Requisiti
 
